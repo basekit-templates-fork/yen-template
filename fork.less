@@ -195,4 +195,24 @@
     line-height: @font__feature-strapline--line-height;
     color: @color__feature-strapline--text;
     left: 0px;
+
+    @media @mobile {
+        font-size: bkscale(@font__feature-strapline--font-size, 0.8);
+        line-height: bkscale(@font__feature-strapline--line-height, 0.8);
+    }
+}
+
+
+
+
+// -----------------------------
+// #Slideshow
+// -----------------------------
+
+.widget-profile {
+    padding: 20px;
+    bottom: 0;
+    h1, h2,h3, h4, p, a, span, .socialicons__social-name {
+        color: @font-swatch6-color;
+    }
 }
