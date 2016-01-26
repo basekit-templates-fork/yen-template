@@ -1,5 +1,5 @@
 {
-    "name": "Prop",
+    "name": "Yen-template",
     "widgetVersion":2,
     "thumbnail": "prop.png",
     "screenshot":"prop-screenshot.jpg",
@@ -14,8 +14,8 @@
         "Swatch 1": {
             "color1":"#ffffff",
             "color2":"#282828",
-            "color3":"#d6d6d6",
-            "color4":"#282828",
+            "color3":"#000000",
+            "color4":"#000000",
             "color5":"#282828",
             "color6":"#282828",
             "color7":"#9AA7B5"
@@ -104,7 +104,7 @@
             "font-size": "16px",
             "font-weight": "700",
             "line-height": "24px",
-            "color": "@color-swatch6",
+            "color": "@color-swatch1",
             "color-hover": "@color-swatch6",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
@@ -125,7 +125,7 @@
             "font-size": "30px",
             "font-weight": "400",
             "line-height": "38px",
-            "color": "@color-swatch4",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font9": {
@@ -133,7 +133,7 @@
             "font-size": "18px",
             "font-weight": "300",
             "line-height": "26px",
-            "color": "@color-swatch4",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font10": {
@@ -141,7 +141,7 @@
             "font-size": "32px",
             "font-weight": "700",
             "line-height": "30px",
-            "color": "@color-swatch2",
+            "color": "@color-swatch1",
             "letter-spacing": "4px"
         }
     },
