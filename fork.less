@@ -70,6 +70,14 @@
     align-self: auto;
 }
 
+.template-header .template-logo {
+    padding: 20px;
+    margin: 0;
+    @media @bp-global-small {
+        margin: 0;
+    }
+}   
+
 
 // -----------------------------
 // #Navigation
@@ -81,8 +89,20 @@
     background-color: lighten(@color-swatch3, 10%);
 }
 
+.tablet-top-bar {
+    @media @bp-global-small {
+        background-color: @color-swatch3;
+    }
+}
 
-
+.navigation-toggle {
+    .animation;
+    // Displays as icon's middle bar
+    background-color: lighten(@color-swatch3,20%);
+    &:after, &:before {
+        background: lighten(@color-swatch3,20%);
+    }
+}
 
 // -----------------------------
 // #Slideshow
@@ -93,7 +113,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: 100vh;.responsiveslideshow .caption
 
     @media @tablet {
         height: 100%;
@@ -102,6 +122,7 @@
 
 .responsiveslideshow__slides-list {
     height: 100vh;
+
     @media @tablet {
         height: 100%;
     }
@@ -110,11 +131,14 @@
 .responsiveslideshow .caption {
     height: 100vh;
     background-color: rgba (0, 0, 0, 0.4);
+
     @media @tablet {
         padding-bottom: 4%;
+        height: 100%;
     }
     @media @mobile {
         padding-bottom: 6%;
+        height: 100%;
     }
 }
 
@@ -123,6 +147,13 @@
     background-color: transparent;
     margin-left: 40px;
     padding: 0;
+
+    @media @tablet {
+        margin-left: 30px;
+    }
+    @media @mobile {
+        margin-left: 20px;
+    }
 }
 
 .responsiveslideshow__image-title {
@@ -133,15 +164,14 @@
     color: @color__feature-headline--text;
     left: -2px;
 
-        @media @tablet {
-            font-size: bkscale(@font__feature-headline--font-size, 0.8);
-            line-height: bkscale(@font__feature-headline--font-size, 0.8);
-        }
-        
-        @media @mobile {
-            font-size: bkscale(@font__feature-headline--font-size, 0.5);
-            line-height: bkscale(@font__feature-headline--font-size, 0.5);
-        }
+    @media @tablet {
+        font-size: bkscale(@font__feature-headline--font-size, 0.8);
+        line-height: bkscale(@font__feature-headline--line-height, 0.8);
+    }
+    @media @mobile {
+        font-size: bkscale(@font__feature-headline--font-size, 0.4);
+        line-height: bkscale(@font__feature-headline--line-height, 0.4);
+    }
 
 }
 
@@ -154,7 +184,7 @@
     left: 0px;
         
         @media @mobile {
-            font-size: bkscale(@font__feature-strapline--font-family, 0.9);
-            line-height: bkscale(@font__feature-strapline--font-size, 0.9);
+            font-size: bkscale(@font__feature-strapline--font-size, 0.9);
+            line-height: bkscale(@font__feature-headline--line-height, 0.9);
         }
 }
