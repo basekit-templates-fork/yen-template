@@ -122,9 +122,9 @@
         },
         "font8": {
             "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "30px",
+            "font-size": "65px",
             "font-weight": "400",
-            "line-height": "38px",
+            "line-height": "75px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },

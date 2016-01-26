@@ -102,8 +102,31 @@
 }
 
 .responsiveslideshow .caption {
-    display: block;
-    margin: 0;
     height: 100vh;
     background-color: rgba (0, 0, 0, 0.4);
+}
+
+.responsiveslideshow__image-title,
+.responsiveslideshow__image-description {
+    background-color: transparent;
+    color: @font-swatch8-color;
+    margin-left: 20px;
+}
+
+.responsiveslideshow__image-title {
+    font-family: @font__feature-headline--font-family;
+    font-size: @font__feature-headline--font-size;
+    font-weight: @font__feature-headline--font-weight;
+    line-height: @font__feature-headline--line-height;
+    background-color: transparent;
+    color: @font__feature-headline--font-color;
+}
+
+.responsiveslideshow__image-description {
+    font-family: @font__feature-strapline--font-family;
+    font-size: @font__feature-strapline--font-size;
+    font-weight: @font__feature-strapline--font-weight;
+    line-height: @font__feature-strapline--line-height;
+    background-color: transparent;
+    color: @font__feature-strapline--font-color;
 }
