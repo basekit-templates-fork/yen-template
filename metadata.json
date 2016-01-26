@@ -219,9 +219,7 @@
         },
         "feature": {
             "color__feature-headline--text" : "@font-swatch8-color",
-            "color__feature-headline--background" : "@color-swatch1",
             "color__feature-strapline--text" : "@font-swatch9-color",
-            "color__feature-strapline--background" : "@color-swatch3",
             "color__feature-button--text" : "@color-swatch4",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
             "font__feature-headline--font-size" : "@font-swatch8-font-size",
@@ -252,10 +250,8 @@
         "slideshow": {
             "color__slideshow--background" : "darken(fade(@color-swatch1, 90%), 3%)",
             "color__slideshow-title--text" : "@color__body--background",
-            "color__slideshow-title--background" : "fade(@color__primary, 80%)",
             "color__slideshow-caption--background": "@color-swatch3",
             "color__slideshow-description--text" : "@color__p--text",
-            "color__slideshow-description--background" : "darken(fade(@color__body--background, 90%), 3%)",
             "color__slideshow-pagination-item--background--hover" : "fade(@color-swatch2, 70%)",
             "color__slideshow-pagination-item--background--selected" : "@color__primary"
         },
