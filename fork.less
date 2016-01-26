@@ -104,16 +104,6 @@
 .responsiveslideshow .caption {
     display: block;
     margin: 0;
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: -webkit-linear-gradient(fade(@color__slideshow-caption--background, 50%) 0%, fade(@color__slideshow-caption--background, 50%) 50%);
-        background-image: -o-linear-gradient(fade(@color__slideshow-caption--background, 50%) 0%, fade(@color__slideshow-caption--background, 50%) 50%);
-        background-image: linear-gradient(fade(@color__slideshow-caption--background, 50%) 0%, fade(@color__slideshow-caption--background, 50%) 50%);
-    }
+    height: 100vh;
+    background-color: rgba (0, 0, 0, 0.4);
 }
