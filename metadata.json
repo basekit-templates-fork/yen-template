@@ -58,9 +58,9 @@
         }
     },
     "fontSwatch": {
-       "title": "Lato",
+       "title": "Rajdani",
         "font1": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "26px",
             "font-weight": "700",
             "line-height": "35px",
@@ -68,7 +68,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "24px",
             "font-weight": "700",
             "line-height": "33px",
@@ -76,7 +76,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "22px",
             "font-weight": "700",
             "line-height": "30px",
@@ -84,7 +84,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "19px",
             "font-weight": "700",
             "line-height": "25px",
@@ -100,7 +100,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "16px",
             "font-weight": "700",
             "line-height": "24px",
@@ -111,7 +111,7 @@
             "background-color-hover": "@color-swatch3"
          },
         "font7": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "14px",
             "font-weight": "700",
             "line-height": "27px",
@@ -121,7 +121,7 @@
             "background-color-hover": "@color-swatch3"
         },
         "font8": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "30px",
             "font-weight": "400",
             "line-height": "38px",
@@ -137,7 +137,7 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Rajdhani\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "32px",
             "font-weight": "700",
             "line-height": "30px",
