@@ -1,3 +1,7 @@
+
+
+
+
 // -----------------------------
 // #Header
 // -----------------------------
@@ -79,6 +83,8 @@
 }   
 
 
+
+
 // -----------------------------
 // #Navigation
 // -----------------------------
@@ -98,11 +104,18 @@
 .navigation-toggle {
     .animation;
     // Displays as icon's middle bar
-    background-color: lighten(@color-swatch3,20%);
+    background-color: lighten(@color-swatch3,30%);
     &:after, &:before {
-        background: lighten(@color-swatch3,20%);
+        background: lighten(@color-swatch3,30%);
     }
 }
+
+.navigation-toggle:hover {
+    background: lighten(@color-swatch3,30%);
+}
+
+
+
 
 // -----------------------------
 // #Slideshow
@@ -180,9 +193,4 @@
     line-height: @font__feature-strapline--line-height;
     color: @color__feature-strapline--text;
     left: 0px;
-        
-        @media @mobile {
-            font-size: bkscale(@font__feature-strapline--font-size, 0.9);
-            line-height: bkscale(@font__feature-headline--line-height, 0.9);
-        }
 }
