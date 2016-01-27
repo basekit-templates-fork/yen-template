@@ -194,7 +194,7 @@
         },
         "button": {
             "color__button--background" : "@color-swatch3",
-            "color__button--background--hover" : "fade(@color__primary, 7%)",
+            "color__button--background--hover" : "fade(@color-swatch3, 7%)",
             "color__button--text" : "@font-swatch7-color",
             "color__button--text--hover" : "@color__button--text",
             "color__button--border" : "@color__primary",
@@ -258,7 +258,7 @@
             "color__slideshow-pagination-item--background--selected" : "@color__primary"
         },
         "socialicons": {
-            "color__socialicons--icon" : "@color__button--text"
+            "color__socialicons--icon" : "@color-swatch3"
         },
         "blog": {
             "color__blogpostlist-title--background" : "fade(@color__primary, 80%);",
