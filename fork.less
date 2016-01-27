@@ -106,12 +106,14 @@
 
 .navigation-toggle {
     .animation;
-
     &:hover {
         background-color: lighten(@color-swatch3,30%);
         box-shadow:  inset 0px 0px 0px 2px @color__primary;
     }
+}
 
+.open .navigation-toggle {
+    background-color: transparent!important;
 }
 
 
