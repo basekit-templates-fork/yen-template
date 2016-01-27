@@ -1,5 +1,5 @@
 // -----------------------------
-// Prop Template: JS > theme.js
+// Yen Template: JS > theme.js
 // -----------------------------
 
 
