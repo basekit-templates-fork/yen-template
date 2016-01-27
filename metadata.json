@@ -194,7 +194,7 @@
         },
         "button": {
             "color__button--background" : "@color-swatch3",
-            "color__button--background--hover" : "lighten(@color-swatch3, 7%)",
+            "color__button--background--hover" : "lighten(@color-swatch3, 10%)",
             "color__button--text" : "@font-swatch7-color",
             "color__button--text--hover" : "@color__button--text",
             "color__button--border" : "@color__primary",
