@@ -59,9 +59,8 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    @media @bp-global-small {
-        margin: 0 0 20px 0;
-    }
+    margin: 0;
+    padding: 20px;
 }
 
 // Logo
@@ -120,7 +119,7 @@
         -o-background-size: cover;
         background-size: cover;
         height: 100vh;
-        @media @tablet {
+        @media @bp-global-medium {
             height: 100%;
         }
     }
@@ -137,7 +136,7 @@
         height: 100vh;
         background-color: rgba (0, 0, 0, 0.4);
     
-        @media @tablet {
+        @media @bp-global-medium {
             padding-bottom: 4%;
             height: 100%;
         }
@@ -152,7 +151,7 @@
         margin-left: 40px;
         padding: 0;
     
-        @media @tablet {
+        @media @bp-global-medium {
             margin-left: 30px;
         }
         @media @mobile {
@@ -169,7 +168,7 @@
         background-color: transparent;
         left: -2px;
     
-        @media @tablet {
+        @media @bp-global-medium {
             font-size: bkscale(@font__feature-headline--font-size, 0.8);
             line-height: bkscale(@font__feature-headline--line-height, 0.8);
         }
@@ -190,7 +189,7 @@
         background-color: transparent;
         left: 0px;
 
-        @media @tablet {
+        @media @bp-global-medium {
             font-size: bkscale(@font__feature-strapline--font-size, 0.8);
             line-height: bkscale(@font__feature-strapline--line-height, 0.8);
         }
@@ -217,7 +216,7 @@
 
 .template-content {
     height: 100vh;
-    @media @tablet {
+    @media @bp-global-medium {
         height: 100%;
     }
 }
@@ -253,7 +252,7 @@
         color: @font-swatch6-color;
         box-shadow: inset 0px -2px 0px 0px rgba(40, 40, 40, 0.82);
     }
-    @media @tablet {
+    @media @bp-global-medium {
         position: relative;
         padding: 20px;
         h1, h2,h3, h4, p, a, span, .socialicons__social-name {
