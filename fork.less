@@ -256,10 +256,13 @@
 }
 
 
+
+
 // -----------------------------
 // Extras
 // -----------------------------
 
+// Template Content
 .template-content {
     height: 100vh;
     @media @bp-global-small {
@@ -270,6 +273,7 @@
     }
 }
 
+// Widget Profile
 .widget-profile {
     bottom: 0;
     position: absolute;
@@ -317,11 +321,22 @@
     }
 }
 
+// Phone number 
 .widget__profile .phone-number-link:before, 
 .emailaddress__email:before {
     color: @font-swatch6-color;
 }
 
+// Footer
 .template-footer {
     display: none;
+}
+
+// Contact form textarea
+textarea {
+    border-color: transparent;
+}
+
+textarea:focus {
+    border-color: transparent;
 }
