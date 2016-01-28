@@ -199,17 +199,17 @@
     .responsiveslideshow__image-title,
     .responsiveslideshow__image-description {
         background-color: transparent;
-        margin-left: 40px;
-        padding: 0;
+        padding: 0 40px;
+        white-space: normal;
     
         @media @bp-global-small {
-            margin-left: 30px;
+            padding: 0 20px;
         }
         @media @tablet {
-            margin-left: 30px;
+            padding: 0 20px;
         }
         @media @mobile {
-            margin-left: 20px;
+            padding: 0 20px;
         }
     }
     
@@ -219,7 +219,6 @@
         font-weight: @font__feature-headline--font-weight;
         line-height: @font__feature-headline--line-height;
         color: @color__feature-headline--text;
-        background-color: transparent;
         left: -2px;
 
         @media @bp-global-small {
@@ -245,7 +244,6 @@
         font-weight: @font__feature-strapline--font-weight;
         line-height: @font__feature-strapline--line-height;
         color: @color__feature-strapline--text;
-        background-color: transparent;
         left: 0px;
 
         @media @bp-global-small {
