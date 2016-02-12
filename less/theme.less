@@ -1,5 +1,5 @@
 // ------------------------------
-// Yen Template: CSS > Theme
+// Yen  Template: CSS > Theme
 // ------------------------------
 
 // 1. #Global Breakpoints
@@ -19,9 +19,9 @@
 
 
 
-@bp-global-large:   ~"only screen and (min-width : 1200px)";
-@bp-global-medium:  ~"only screen and (min-width : 851px) and (max-width : 1200px)";
-@bp-global-small:   ~"only screen and (max-width : 850px)";
+@bp-global-large: 	~"only screen and (min-width : 1200px)";
+@bp-global-medium: 	~"only screen and (min-width : 851px) and (max-width : 1200px)";
+@bp-global-small: 	~"only screen and (max-width : 850px)";
 
 // When specific styles for responsive columns styles are applied
 @bp-global-columns:   ~"only screen and (min-width : 478px)";
@@ -173,7 +173,7 @@ body {
             letter-spacing: 0;
             font-size: 16px;
             box-shadow:  inset 0px 0px 0px 2px fade(@color__primary, 0%);
-            background-color: @color__button--background;
+            background-color: transparent;
             -webkit-transition: all 0.1s ease-in-out;
             -moz-transition: all 0.1s ease-in-out;
             -o-transition: all 0.1s ease-in-out;
@@ -237,7 +237,7 @@ body {
     bottom: 0;
     left: 0;
     height: 100vh;
-    background-color: @color__ecombasket--background;
+    background-color: @color__navigation--background;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -265,10 +265,6 @@ body {
     -ms-transform: translate(-100%, 0px);
     transform: translate(-100%, 0px);
     opacity: 0;
-
-    @media @tablet {
-        height: 100%;
-    }
 
     @media @mobile {
         padding: 40px 12px 42px 12px;
@@ -513,7 +509,7 @@ body {
 
     // Container
 
-    .container {
+	.container {
         position: absolute;
         top: 0;
         right: 0;
@@ -559,7 +555,7 @@ body {
             -ms-flex: 1 0 auto;
             flex: 1 0 auto;
         }
-    }
+	}
 
     // Company
 
@@ -589,10 +585,6 @@ body {
          margin: 0 0 20px 0;
          width: 100%;
          text-align: center;
-
-         @media @bp-global-small {
-            margin: 0 15px 10px 0;
-        }
     }
 
     // Company Name
@@ -650,7 +642,7 @@ body {
     // ------------------------------
 
 
-    .container {
+	.container {
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
@@ -692,7 +684,7 @@ body {
                 margin-right: 0;
             }
         }
-    }
+	}
 }
 
 
@@ -728,7 +720,7 @@ body {
 
 
 a {
-    color: @color__link--text;
+	color: @color__link--text;
     &:hover {
         text-decoration: none;
     }
