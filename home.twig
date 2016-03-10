@@ -4,7 +4,42 @@
 
 {% block content %}
 
-{{widget('feature', 'featurehome', {"header": "profile", "defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50%','showBtn': true, "buttonText":"Lorem Ipsum"})|raw}}
+<div class="homepage-slideshow">
+
+  {{widget('responsiveslideshow', 'slideshow', {
+      'duration':'3',
+      'transSpeed': '1000',
+      'transType': 'fade',
+      'showButtons': true,
+      'showBullets': false,
+      'allowPause': false,
+      'allowLoop': true,
+      'images':[
+        {
+          'imageHeight':'400',
+          'imageWidth':'1000',
+          'url':asset('/images/slideshow/slideshow-1.jpg'),
+          'title':'First slide title',
+          'description': 'First slide description'
+        },
+        {
+          'imageHeight':'400',
+          'imageWidth':'1000',
+          'url':asset('/images/slideshow/slideshow-2.jpg'),
+          'title':'First slide title',
+          'description': 'First slide description'
+        },
+        {
+          'imageHeight':'400',
+          'imageWidth':'1000',
+          'url':asset('/images/slideshow/slideshow-3.jpg'),
+          'title':'First slide title',
+          'description': 'First slide description'
+        }
+      ]
+  })|raw}}
+
+</div>
 
 <section class="page  page--home">
 
