@@ -1,5 +1,5 @@
 // ------------------------------
-// Yen  Template: CSS > Theme
+// Prop Template: CSS > Theme
 // ------------------------------
 
 // 1. #Global Breakpoints
@@ -237,7 +237,7 @@ body {
     bottom: 0;
     left: 0;
     height: 100vh;
-    background-color: @color__navigation--background;
+    background-color: @color__primary;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -265,6 +265,10 @@ body {
     -ms-transform: translate(-100%, 0px);
     transform: translate(-100%, 0px);
     opacity: 0;
+
+    @media @tablet {
+        height: 100%;
+    }
 
     @media @mobile {
         padding: 40px 12px 42px 12px;
@@ -585,6 +589,10 @@ body {
          margin: 0 0 20px 0;
          width: 100%;
          text-align: center;
+
+         @media @bp-global-small {
+            margin: 0 15px 10px 0;
+        }
     }
 
     // Company Name
