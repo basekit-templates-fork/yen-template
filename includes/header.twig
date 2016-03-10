@@ -1,29 +1,24 @@
 <!-- Header -->
 <header class="template-header">
 	<div class="tablet-top-bar"></div> <!-- Nav top bar background -->
-		<div class="container">
-			<div class="company">
-				<div class="template-logo">
-					{{widget('logo', 'logo', {
-						"defaultlogo": asset('images/logo.png')
-					})|raw}}
-				</div>
-	
-				<div class="template-companyname">
-					{{widget('companyname', 'companyname', {
-						"business": "profile",
-						"showTplWidget":"0"
-					})|raw}}
-				</div>
+	<div class="container">
+		<div class="company">
+			<div class="template-logo">
+				{{widget('logo', 'logo', {
+					"defaultlogo": asset('images/logo.png'),
+					"showTplWidget":"0"
+				})|raw}}
 			</div>
 
-			<div class="template-navigation">
-				{{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
-			</div>
-			<div class="widget-profile">
-				{{widget('profile', 'phone', { 'profileType':'phone', 'phone':'profile'})|raw}}
+			<div class="template-companyname">
+				{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
 			</div>
 		</div>
+		<div class="template-navigation">
+			{{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+		</div>
+
+	</div>
+
 </header>
 <!-- End Header -->
-
