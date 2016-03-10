@@ -1,75 +1,51 @@
 <!doctype html>
-<!--[if lt IE 7]>
-	<html class="no-js ie6 oldie" lang="en">
-<![endif]-->
-<!--[if IE 7]>
-	<html class="no-js ie7 oldie" lang="en">
-<![endif]-->
-<!--[if IE 8]>
-	<html class="no-js ie8 oldie" lang="en">
-<![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="no-js" lang="{{ page.seoLang }}">
-<!--<![endif]-->
 
-<head>
-	<meta charset="utf-8" />
-	<title>{{ page.title }}</title>
-	<meta name="keywords" content="{{ page.keywords }}" />
-	<meta name="description" content="{{ page.description }}" />
+	{% include "includes/head.twig" %}
 
-	{% if site.favicon %}
-		<link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
-		<link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ "now"|date("U") }}" type="image/x-icon" />
-	{% endif %}
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
-	{% include basekit.headScript %}
-</head>
-<head>
+	<body class="{{ page.backgroundClass }} no-touch{% if app.mode != 'published' and app.mode != 'site-preview' %} edit-mode{% endif %}
+">
 
 
-<body class="{{ page.backgroundClass }} no-touch{% if app.mode != 'published' and app.mode != 'site-preview' %} edit-mode{% endif %}">
 
 
-	{% include "includes/header.twig" %}
+		{% include "includes/header.twig" %}
 
-	<div class="template-content">
+		<div class="template-content">
 
-		<div class="container">
-
-		{% if plugins.ecommerce.store.live %}
-			<div class="ecommerce-bar">
-				<div class="container">
-					<div class="template-search">
-						<button class="search-toggle"></button>
-						<div class="search-overlay">
-							<form class="search-overlay-form" method="GET" action="/store">
-							    <div class="search-overlay-form-group">
-								    <input class="input  input--search  ecomproductslist__input  js-display-control" name="productlist-search" placeholder="Search term" type="search" value="">
-								    <button class="button  button--submit  ecomproductslist__button" type="submit">Search</button>
-								</div>
-							</form>
+			<div class="container">
+			{% if plugins.ecommerce.store.live %}
+				<div class="ecommerce-bar">
+					<div class="container">
+						<div class="template-search">
+							<button class="search-toggle"></button>
+							<div class="search-overlay">
+								<form class="search-overlay-form" method="GET" action="/store">
+								    <div class="search-overlay-form-group">
+									    <input class="input  input--search  ecomproductslist__input  js-display-control" name="productlist-search" placeholder="Search term" type="search" value="">
+									    <button class="button  button--submit  ecomproductslist__button" type="submit">Search</button>
+									</div>
+								</form>
+							</div>
 						</div>
+						<div class="template-basket">{{widget('ecombasket', 'shopbasket', {})|raw}}</div>
 					</div>
-					<div class="template-basket">{{widget('ecombasket', 'shopbasket', {})|raw}}</div>
 				</div>
+				{% endif %}
+				{% block content %}
+				{% endblock %}
+				{% include "includes/footer.twig" %}
 			</div>
-			{% endif %}
-			{% block content %}
-			{% endblock %}
-			{% include "includes/footer.twig" %}
 		</div>
 
-	</div>
 
 
+	    {% include basekit.bodyScript %}
 
-    {% include basekit.bodyScript %}
-
-	<script src="{{ asset('js/theme.js')}}"></script>
+		<script src="{{ asset('js/theme.js')}}"></script>
 
 
-</body>
+	</body>
 
 </html>
