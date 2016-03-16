@@ -1,3 +1,4 @@
+<!doctype html>
 <!--[if lt IE 7]>
 	<html class="no-js ie6 oldie" lang="en">
 <![endif]-->
@@ -35,26 +36,29 @@
 		<div class="template-content">
 
 			<div class="container">
-			{% if plugins.ecommerce.store.live %}
-				<div class="ecommerce-bar">
-					<div class="container">
-						<div class="template-search">
-							<button class="search-toggle"></button>
-							<div class="search-overlay">
-								<form class="search-overlay-form" method="GET" action="/store">
-								    <div class="search-overlay-form-group">
-									    <input class="input  input--search  ecomproductslist__input  js-display-control" name="productlist-search" placeholder="Search term" type="search" value="">
-									    <button class="button  button--submit  ecomproductslist__button" type="submit">Search</button>
-									</div>
-								</form>
+
+				{% if plugins.ecommerce.store.live %}
+					<div class="ecommerce-bar">
+						<div class="container">
+							<div class="template-search">
+								<button class="search-toggle"></button>
+								<div class="search-overlay">
+									<form class="search-overlay-form" method="GET" action="/store">
+									    <div class="search-overlay-form-group">
+										    <input class="input  input--search  ecomproductslist__input  js-display-control" name="productlist-search" placeholder="Search term" type="search" value="">
+										    <button class="button  button--submit  ecomproductslist__button" type="submit">Search</button>
+										</div>
+									</form>
+								</div>
 							</div>
+							<div class="template-basket">{{widget('ecombasket', 'shopbasket', {})|raw}}</div>
 						</div>
-						<div class="template-basket">{{widget('ecombasket', 'shopbasket', {})|raw}}</div>
 					</div>
-				</div>
 				{% endif %}
+
 				{% block content %}
 				{% endblock %}
+
 				{% include "includes/footer.twig" %}
 			</div>
 		</div>
