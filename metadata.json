@@ -1,7 +1,7 @@
 {
-    "name": "Visby",
-    "thumbnail": "visby.png",
-    "screenshot" : "visby-screenshot.jpg",
+    "name": "Yen Template",
+    "thumbnail": "yen.png",
+    "screenshot" : "yen-screenshot.jpg",
     "widgetVersion": 2,
     "templateType":"standard",
     "pageTypes": ["home"],
