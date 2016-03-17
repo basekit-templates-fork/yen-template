@@ -1,8 +1,8 @@
 {
     "name": "Prop",
     "widgetVersion":2,
-    "thumbnail": "prop.png",
-    "screenshot":"prop-screenshot.jpg",
+    "thumbnail": "yen.png",
+    "screenshot":"yen-screenshot.jpg",
     "templateType":"standard",
     "pageTypes": ["home"],
      "images":[
