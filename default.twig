@@ -2,19 +2,8 @@
 
 {% block content %}
 
-<section class="page  page--default">
 
-	<!-- Zone Content -->
-	<div class="zone-content">
+{{zone('main')|raw}}
 
-		<div class="container">
-            {{widget('pagetitle', 'pagetitle-id', {})|raw}}
-			<!-- Main Widet Zone -->
-	   		{{zone('main')|raw}}
-		</div>
-	</div>
-	<!-- End Zone Content -->
-
-</section>
 
 {% endblock %}
