@@ -2,8 +2,53 @@
 
 {% block content %}
 
+<div class="homepage-slideshow">
 
+  {{widget('responsiveslideshow', 'slideshow', {
+      'duration':'3',
+      'transSpeed': '1000',
+      'transType': 'fade',
+      'showButtons': true,
+      'showBullets': false,
+      'allowPause': false,
+      'allowLoop': true,
+      'images':[
+        {
+          'imageHeight':'400',
+          'imageWidth':'1000',
+          'url':asset('/images/slideshow/slideshow-1.jpg'),
+          'title':'First slide title',
+          'description': 'First slide description'
+        },
+        {
+          'imageHeight':'400',
+          'imageWidth':'1000',
+          'url':asset('/images/slideshow/slideshow-2.jpg'),
+          'title':'First slide title',
+          'description': 'First slide description'
+        },
+        {
+          'imageHeight':'400',
+          'imageWidth':'1000',
+          'url':asset('/images/slideshow/slideshow-3.jpg'),
+          'title':'First slide title',
+          'description': 'First slide description'
+        }
+      ]
+  })|raw}}
+
+</div>
+
+<section class="page  page--home">
+
+  <!-- Zone Content -->
+  <div class="zone-content">
+    <!-- Main Widet Zone -->
       {{zone('main')|raw}}
+  </div>
+  <!-- End Zone Content -->
 
+</section>
 
+<!-- End Home Page Content -->
 {% endblock %}
